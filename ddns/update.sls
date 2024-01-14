@@ -1,7 +1,8 @@
 dns_packages:
   pkg.installed:
-    - name: bind-utils
-
+    - pkgs:
+       - bind-utils
+       - net-tools
 
 ddns_run_script:
    file.managed:
